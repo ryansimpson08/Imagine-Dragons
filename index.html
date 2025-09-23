@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine Dragons: Official Fan Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+        .text-neon {
+            color: #39FF14;
+        }
+        .border-neon {
+            border-color: #39FF14;
+        }
+        .bg-gradient-neon {
+            background-image: linear-gradient(to right, #39FF14, #00C4FF);
+        }
+        .shadow-neon {
+            box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
+        }
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        .hero-bg {
+            background: url('https://placehold.co/1920x1080/000000/FFFFFF?text=IMAGINE+DRAGONS') no-repeat center center/cover;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#hero" class="text-xl font-bold text-neon rounded-full p-2">
+                        IMAGINE DRAGONS
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#history" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">History</a>
+                        <a href="#discography" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Discography</a>
+                        <a href="#gallery" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Gallery</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#history" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">History</a>
+                <a href="#discography" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Discography</a>
+                <a href="#gallery" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="bg-black bg-opacity-60 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
+                IMAGINE <span class="text-neon">DRAGONS</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Welcome to the unofficial fan site dedicated to the Grammy Award-winning rock band.
+            </p>
+            <a href="#discography" class="bg-gradient-neon text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-neon transition duration-300">
+                Explore the Music
+            </a>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">The <span class="text-neon">Band's History</span></h2>
+        <div class="bg-gray-800 rounded-3xl p-6 md:p-10 shadow-lg border-2 border-gray-700">
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="https://placehold.co/800x600/1e1e1e/FFFFFF?text=Band+Photo" alt="Imagine Dragons band members" class="rounded-2xl shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                        Imagine Dragons is an American pop rock band from Las Vegas, Nevada, consisting of lead singer Dan Reynolds, guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman. The band gained exposure with the release of their single "It's Time", followed by their debut studio album *Night Visions* (2012), which resulted in the chart-topping singles "Radioactive" and "Demons".
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Their second studio album, *Smoke + Mirrors* (2015), reached number one on the US *Billboard* 200. The band has become one of the most commercially successful rock bands of the 2010s. They hold the record for the most weeks at No. 1 on the Billboard Hot Rock Songs chart for their hits "Believer", "Thunder", and "Radioactive".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discography Section -->
+    <section id="discography" class="py-16 md:py-24 bg-gray-900">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Full <span class="text-neon">Discography</span></h2>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Night Visions Card -->
+            <div class="card p-6 rounded-2xl shadow-xl border-gray-700">
+                <img src="https://placehold.co/400x400/1e1e1e/FFFFFF?text=Night+Visions+Cover" alt="Night Visions Album Cover" class="rounded-xl w-full mb-4 shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Night Visions (2012)</h3>
+                <p class="text-gray-400">Features hit singles like "Radioactive" and "Demons."</p>
+            </div>
+            <!-- Smoke + Mirrors Card -->
+            <div class="card p-6 rounded-2xl shadow-xl border-gray-700">
+                <img src="https://placehold.co/400x400/1e1e1e/FFFFFF?text=Smoke+%2B+Mirrors+Cover" alt="Smoke + Mirrors Album Cover" class="rounded-xl w-full mb-4 shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Smoke + Mirrors (2015)</h3>
+                <p class="text-gray-400">Includes tracks such as "I Bet My Life" and "Shots."</p>
+            </div>
+            <!-- Evolve Card -->
+            <div class="card p-6 rounded-2xl shadow-xl border-gray-700">
+                <img src="https://placehold.co/400x400/1e1e1e/FFFFFF?text=Evolve+Cover" alt="Evolve Album Cover" class="rounded-xl w-full mb-4 shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Evolve (2017)</h3>
+                <p class="text-gray-400">Known for singles like "Believer," "Thunder," and "Whatever It Takes."</p>
+            </div>
+            <!-- Origins Card -->
+            <div class="card p-6 rounded-2xl shadow-xl border-gray-700">
+                <img src="https://placehold.co/400x400/1e1e1e/FFFFFF?text=Origins+Cover" alt="Origins Album Cover" class="rounded-xl w-full mb-4 shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Origins (2018)</h3>
+                <p class="text-gray-400">A companion album to Evolve, featuring "Natural" and "Bad Liar."</p>
+            </div>
+            <!-- Mercury - Act 1 Card -->
+            <div class="card p-6 rounded-2xl shadow-xl border-gray-700">
+                <img src="https://placehold.co/400x400/1e1e1e/FFFFFF?text=Mercury+-+Act+1+Cover" alt="Mercury - Act 1 Album Cover" class="rounded-xl w-full mb-4 shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Mercury – Act 1 (2021)</h3>
+                <p class="text-gray-400">Includes singles "Wrecked" and "Follow You."</p>
+            </div>
+            <!-- Mercury - Act 2 Card -->
+            <div class="card p-6 rounded-2xl shadow-xl border-gray-700">
+                <img src="https://placehold.co/400x400/1e1e1e/FFFFFF?text=Mercury+-+Act+2+Cover" alt="Mercury - Act 2 Album Cover" class="rounded-xl w-full mb-4 shadow-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Mercury – Act 2 (2022)</h3>
+                <p class="text-gray-400">Features the hit song "Bones."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Photo <span class="text-neon">Gallery</span></h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Live+Performance+1" alt="Imagine Dragons live performance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Live+Performance+2" alt="Imagine Dragons live performance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Studio+Session" alt="Imagine Dragons in the studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Band+On+Stage" alt="Imagine Dragons on stage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Tour+Photo" alt="Imagine Dragons tour photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Dan+Reynolds" alt="Dan Reynolds singing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Ben+McKee" alt="Ben McKee playing bass" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="relative group rounded-xl overflow-hidden shadow-lg border-2 border-gray-700 hover:border-neon transition duration-300">
+                <img src="https://placehold.co/600x400/1e1e1e/FFFFFF?text=Wayne+Sermon" alt="Wayne Sermon playing guitar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2023 Imagine Dragons Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
